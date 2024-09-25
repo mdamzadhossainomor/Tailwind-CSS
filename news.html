@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en" class="dark" id="htmlTag">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>news-TickerAi</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://www.shutterstock.com/shutterstock/photos/387841594/display_1500/stock-vector-favorite-star-icon-387841594.jpg" type="image/x-icon">
+</head>
+<body class="bg-white dark:bg-black">
+    <!-- navbar start -->
+    <header class="container mx-auto " >
+        <nav class="flex items-center justify-between md:mx-7 my-2 h-10">
+            <div class="flex items-center gap-5" >
+                <a href="index.html">
+                    <img src="image/tickerAI-logo 1.jpg" alt="logo" id="#" class="w-[50px] md:w-[80px]">
+                </a>
+
+                <p class="text-xs md:text-sm dark:text-white">
+                    A Mark Cuban Company <br>
+                    AI-based Financial Market News Aggregator
+                </p>
+              
+            </div>
+
+            <div class="flex gap-5 items-center ">
+                <a href="index.html">
+                    <button class="bg-[#5677AC] text-white text-[16px] md:text-[20px] rounded-lg px-4 transition
+                    hover:bg-[#2162cc] hover:translate-y-[2px]">
+                        Personalize News 
+                    </button>
+                </a>
+
+                <p class="bg-[#bdc9dd] px-4 py-2 rounded-full transition
+                hover:bg-[#c2c8d0] hover:translate-y-[2px] text-white cursor-pointer text-xl font-bold ">
+                    IK
+                </p>
+
+               <button id="swtich">
+                 <img src="image/Vector.jpg" alt="" class="w-6 transition
+                hover:translate-y-[2px] ">
+               </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- navbar end  -->
+
+   
+    <section class="bg-[#F0F0F0F0] md:px-0 px-4 w-full min-h-screen dark:bg-gray-900">
+        <section class="container mx-auto md:py-12 py-8">
+            <div class="  pb-1 md:pb-2.5 border-b md:border-b-[3px] border-black md:mx-16 ">
+                <h3 class="md:text-2xl text-lg font-semibold uppercase text-[#333333] dark:text-white">Personolize your news</h3>
+            </div>
+
+            <div class=" bg-[#FFFFFF] max-w-lg mx-auto md:mt-10 mt-6 p-8  dark:bg-slate-800">
+                <h3 class="font-semibold md:text-[20px] text-lg text-center text-[#333333] dark:text-white">Select your  Markets</h3>
+
+                <div class="py-5 space-y-5 ">
+                    <p class="bg-[#E6EBF3] text-center rounded-full w-full md:py-4 py-2 font-medium md:text-lg gap-5 hover:bg-slate-300 transition-all hover:scale-105 duration-300 cursor-pointer">Stocks</p>
+                    <p class="bg-[#E6EBF3] text-center rounded-full w-full md:py-4 py-2 font-medium md:text-lg gap-5 hover:bg-slate-300 transition-all hover:scale-105 duration-300 cursor-pointer">Crypto</p>
+                    <p class="bg-[#E6EBF3] text-center rounded-full w-full md:py-4 py-2 font-medium md:text-lg gap-5 hover:bg-slate-300 transition-all hover:scale-105 duration-300 cursor-pointer">Economy & Business</p>
+                    <p class="bg-[#E6EBF3] text-center rounded-full w-full md:py-4 py-2 font-medium md:text-lg gap-5 hover:bg-slate-300 transition-all hover:scale-105 duration-300 cursor-pointer">Commodities | Forex</p>
+                </div>
+                <button class="bg-[#5677AC] w-full py-2 md:py-4 rounded-md text-white font-medium md:text-lg hover:bg-[#42669E] transition-all duration-300 hover:scale-105 cursor-pointer"> continue</button>
+            </div>
+
+        </section>
+    </section>
+
+        <footer class="text-black text-center pb-5 w-full dark:text-white"> All right reserved to TickerAi - 2014</footer>
+
+
+        <script>
+            const htmlTag = document.getElementById('htmlTag');
+            document.getElementById("swtich").addEventListener("click",function(){
+                htmlTag.classList.toggle("dark")
+            });
+        </script>
+</body>
+</html>
